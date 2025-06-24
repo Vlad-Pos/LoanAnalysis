@@ -1,0 +1,18 @@
+[project]
+name = "loan_analysis"
+version = "0.1.0"
+description = "A Python tool for calculating and analyzing loans."
+authors = [{ name = "Vlad Postoroanca", email = "vlad.postoroanca@gmail.com" }]
+requires-python = ">=3.13.3"
+readme = "README.md"
+dependencies = [
+    "pandas",
+    "matplotlib"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
