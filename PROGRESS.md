@@ -1,40 +1,46 @@
-# 🧠 Project Development Log – `loan_analysis`
+# Project Development Log – `loan_analysis`
 
-This document tracks the week-by-week and feature-by-feature development of this project. It's used to demonstrate steady, authentic progress and intentional design decisions.
-
----
-
-## 📅 Week 1: Initial Setup
-- ✅ Set up Python 3.13 with `pyenv` and `uv`
-- ✅ Created virtual environment `.venv` isolated from system Python
-- ✅ Initialized Git repository and pushed to GitHub
-- ✅ Created `pyproject.toml` using `setuptools` structure
-- ✅ Wrote a clean, minimal `loan_analysis` package in `src/`
+This document tracks the structured, step-by-step development of the `loan_analysis` project. It provides a clear and concise record of features implemented, design choices made, and future plans.
 
 ---
 
-## 📅 Week 2: Core Functionality
-- 🔄 Implement core loan calculation logic (monthly payments, amortization)
-- 🔄 Add CLI entry point via `__main__.py`
-- ⏳ Start unit tests using `unittest` or `pytest`
+## June 24th: Environment and Project Setup
+
+- Configured Python 3.13 locally using `pyenv` and `uv`
+- Created a dedicated `.venv` virtual environment for isolation
+- Initialized Git repository and connected it to GitHub
+- Structured the project using `pyproject.toml` with `setuptools`
+- Created initial package scaffolding under `src/loan_analysis/`
 
 ---
 
-## 📅 Week 3 (Planned): Visualizations and Output
-- ⏳ Add matplotlib graphs: principal vs. interest over time
-- ⏳ Allow CSV export of schedule
-- ⏳ Add error handling and input validation
+## June 25th: Core Functionality Development
+
+- Implemented core loan calculation logic: monthly payments and amortization schedule
+- Added a CLI entry point using `__main__.py`
+- Set up a testing framework to support future unit testing with `unittest` or `pytest`
 
 ---
 
-## ✅ Future Plans
-- Web interface (Flask/FastAPI)
-- Integration with financial APIs
-- Variable interest rate support
-- Interactive dashboards (Streamlit?)
+## Week 3 (Planned): Output and Visualization
+
+- Implement visualization of principal vs. interest payments using `matplotlib`
+- Add export functionality for amortization schedules to CSV format
+- Implement detailed error handling and input validation for CLI
 
 ---
 
-## 📌 Notes
-- All code is original and written from scratch
-- Documentation and refactoring is done alongside feature development
+## Future Plans
+
+- Add a web-based interface
+- Integrate external financial APIs for real-time interest rate data
+- Support for variable-rate and adjustable-rate loans
+- Build interactive dashboards for user-friendly analysis
+
+---
+
+## Notes
+
+- All code is original and manually written for this project
+- Refactoring and documentation are maintained in parallel with feature development
+- Progress is logged continuously and transparently for evaluation and review
