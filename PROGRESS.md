@@ -1,56 +1,64 @@
 # Project Development Log – `loan_analysis`
 
-This file documents the progress and rationale behind the development of the `loan_analysis` project. Each entry reflects a real and transparent account of functionality built, technical decisions made, and upcoming goals.
+This document captures the journey of developing the `loan_analysis` project. Each entry shares what was accomplished, the reasoning behind technical choices, and plans moving forward.
 
 ---
 
-## June 24 – Initial Setup
+## June 24 – Getting Started
 
-- Installed and configured Python 3.13 using `pyenv`
-- Created an isolated virtual environment using `uv` and `.venv`
-- Initialized the project repository and connected it to GitHub
-- Set up `pyproject.toml` using `setuptools` for modern Python packaging
-- Defined the base package structure under `src/loan_analysis/`
-
----
-
-## June 25 – Core Loan Logic
-
-- Implemented functions for annuity and differentiated loan calculations
-- Added input validation to handle incorrect or insufficient parameters
-- Created a command-line interface with argument parsing via `argparse`
-- Set up a basic testing structure with `unittest` in mind for later test writing
+- Set up Python 3.13 environment using `pyenv`
+- Created an isolated virtual environment with `uv` and `.venv`
+- Initialized the Git repository and linked it to GitHub
+- Configured project packaging with `pyproject.toml` and `setuptools`
+- Established the initial package structure inside `src/loan_analysis/`
 
 ---
 
-## August 6 – CLI and Modularity
+## June 25 – Building Core Loan Logic
 
-- Restructured the logic into clearly separated functions for maintainability
-- Improved CLI support with error handling and flexibility
-- Added support for calculating annuity payments, loan principals, and duration
+- Developed key functions for annuity and differentiated loan calculations
+- Added input validation to ensure correct and complete parameters
+- Built a command-line interface using `argparse` for user interaction
+- Prepared the foundation for unit testing using `unittest`
 
 ---
 
-## August 7 – Differentiated Payment Support
+## August 6 – Improving Modularity and CLI
+
+- Refined code by separating logic into well-defined functions for easier maintenance
+- Enhanced CLI with better error handling and more flexible input support
+- Supported calculations for annuity payments, loan principals, and loan duration
+
+---
+
+## August 7 – Adding Advanced Features and Validation
 
 - Implemented differentiated payment calculations
-- Enhanced robustness with input validation and usage errors
-- Refined function call routing based on loan type
-- Reviewed code for edge cases and logical completeness
+- Strengthened input validation and improved error messages
+- Enabled dynamic function selection based on loan type
+- Conducted thorough code reviews to catch edge cases and ensure robustness
 
 ---
 
-## Next Steps
+## Current State
 
-- Add web-based interaction with a lightweight frontend
-- Integrate real-time financial data through external APIs
-- Expand to support adjustable-rate and variable-rate loans
-- Visualize loan payoff schedules through interactive charts
+- A fully functional CLI loan calculator handling both annuity and differentiated payments
+- Clean, maintainable, and PEP 8-compliant code designed for future growth
+- Original and well-tested algorithms covering all key loan parameters
 
 ---
 
-## Notes
+## What’s Next
 
-- All code is original and developed from scratch
-- Refactoring and documentation are updated regularly alongside features
-- Project structure and code clarity are prioritized to ease maintenance and extendability
+- Develop a web-based interface for easier access and usability
+- Integrate with external APIs to retrieve real-time financial data
+- Expand support for adjustable and variable-rate loans
+- Create interactive visualizations to better illustrate loan repayment schedules
+
+---
+
+## Additional Notes
+
+- All code is written from scratch with attention to quality and structure
+- Continuous refactoring and documentation ensure ongoing improvements
+- The project structure focuses on maintainability and scalability for future needs
