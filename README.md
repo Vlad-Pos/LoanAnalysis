@@ -1,22 +1,22 @@
 # Loan Analysis Tool
 
-This command-line utility allows users to perform detailed calculations for annuity and differentiated loans. It supports estimating monthly payments, total overpayment, loan duration, and more — with robust error handling and flexible input combinations.
+A command-line utility designed to perform accurate loan calculations, supporting both annuity and differentiated payment types. The tool computes monthly payments, loan principal, duration, and overpayment with clear feedback and strong input validation.
 
 ---
 
 ## Features
 
-- Calculates monthly payments, principal, or loan duration for annuity-type loans
-- Supports differentiated payments with detailed monthly breakdown
-- Automatically detects missing parameters and computes them where possible
-- Informs users of overpayment based on selected loan type and inputs
-- Full command-line interface using Python’s `argparse` module
+- Calculate monthly payments, principal, or loan duration for annuity loans  
+- Support differentiated payments with detailed monthly breakdown  
+- Automatically identify and compute missing parameters where possible  
+- Provide clear overpayment summaries based on inputs and loan type  
+- User-friendly CLI leveraging Python’s `argparse` for flexible input handling  
 
 ---
 
-## How to Use
+## Usage
 
-To run the tool, use the following command structure:
+Run the tool from your project root using this command format:
 
 ```bash
-python src/loan_analysis/calculator.py --type=<annuity|diff> --principal=<amount> --payment=<amount> --periods=<months> --interest=<annual_rate>
+python -m src.loan_analysis --type=<annuity|diff> --principal=<amount> --payment=<amount> --periods=<months> --interest=<annual_rate>
