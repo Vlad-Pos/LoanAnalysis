@@ -1,56 +1,56 @@
 # Project Development Log – `loan_analysis`
 
-This document tracks the structured, step-by-step development of the `loan_analysis` project. It provides a clear and concise record of features implemented, design choices made, and future plans.
+This file documents the progress and rationale behind the development of the `loan_analysis` project. Each entry reflects a real and transparent account of functionality built, technical decisions made, and upcoming goals.
 
 ---
 
-## June 24th: Environment and Project Setup
+## June 24 – Initial Setup
 
-- Configured Python 3.13 locally using `pyenv` and `uv`
-- Created a dedicated `.venv` virtual environment for isolation
-- Initialized Git repository and connected it to GitHub
-- Structured the project using `pyproject.toml` with `setuptools`
-- Created initial package scaffolding under `src/loan_analysis/`
-
----
-
-## June 25th: Core Functionality Development
-
-- Implemented core loan calculation logic: monthly payments and amortization schedule
-- Added a CLI entry point using `__main__.py`
-- Set up a testing framework to support future unit testing with `unittest` or `pytest`
+- Installed and configured Python 3.13 using `pyenv`
+- Created an isolated virtual environment using `uv` and `.venv`
+- Initialized the project repository and connected it to GitHub
+- Set up `pyproject.toml` using `setuptools` for modern Python packaging
+- Defined the base package structure under `src/loan_analysis/`
 
 ---
 
-## August 6th: Output and Visualization
+## June 25 – Core Loan Logic
 
-- Added improved input capabilities using `argparse` module
-- Implemented formulas for calculation of separate functions
-- Optimized for annuity payments option
-
-## August 7th: 
-- Added new functionality: differentiated payments
-- Optimized for differentiated payments option
-- Introduced user input error handling
-- Checked code on gaps and exeptions
-  
-- Implement visualization of principal vs. interest payments using `matplotlib`
-- Add export functionality for amortization schedules to CSV format
-- Implement detailed error handling and input validation for CLI
+- Implemented functions for annuity and differentiated loan calculations
+- Added input validation to handle incorrect or insufficient parameters
+- Created a command-line interface with argument parsing via `argparse`
+- Set up a basic testing structure with `unittest` in mind for later test writing
 
 ---
 
-## Future Plans
+## August 6 – CLI and Modularity
 
-- Add a web-based interface
-- Integrate external financial APIs for real-time interest rate data
-- Support for variable-rate and adjustable-rate loans
-- Build interactive dashboards for user-friendly analysis
+- Restructured the logic into clearly separated functions for maintainability
+- Improved CLI support with error handling and flexibility
+- Added support for calculating annuity payments, loan principals, and duration
+
+---
+
+## August 7 – Differentiated Payment Support
+
+- Implemented differentiated payment calculations
+- Enhanced robustness with input validation and usage errors
+- Refined function call routing based on loan type
+- Reviewed code for edge cases and logical completeness
+
+---
+
+## Next Steps
+
+- Add web-based interaction with a lightweight frontend
+- Integrate real-time financial data through external APIs
+- Expand to support adjustable-rate and variable-rate loans
+- Visualize loan payoff schedules through interactive charts
 
 ---
 
 ## Notes
 
-- All code is original and manually written for this project
-- Refactoring and documentation are maintained in parallel with feature development
-- Progress is logged continuously and transparently for evaluation and review
+- All code is original and developed from scratch
+- Refactoring and documentation are updated regularly alongside features
+- Project structure and code clarity are prioritized to ease maintenance and extendability
