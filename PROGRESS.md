@@ -22,8 +22,18 @@ This document tracks the structured, step-by-step development of the `loan_analy
 
 ---
 
-## Week 3 (Planned): Output and Visualization
+## August 6th: Output and Visualization
 
+- Added improved input capabilities using `argparse` module
+- Implemented formulas for calculation of separate functions
+- Optimized for annuity payments option
+
+## August 7th: 
+- Added new functionality: differentiated payments
+- Optimized for differentiated payments option
+- Introduced user input error handling
+- Checked code on gaps and exeptions
+  
 - Implement visualization of principal vs. interest payments using `matplotlib`
 - Add export functionality for amortization schedules to CSV format
 - Implement detailed error handling and input validation for CLI
